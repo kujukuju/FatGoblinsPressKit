@@ -1,0 +1,178 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #cbd9e4;
+    /* background-color: #8aa5bb; */
+    font-family: MyriadLight, sans-serif;
+}
+
+h1 {
+    display: block;
+
+    font-family: MyriadBold, sans-serif;
+    padding: 0;
+    margin: 0;
+
+    margin-top: 24px;
+
+    font-size: 28px;
+}
+
+h2 {
+    display: block;
+
+    padding: 0;
+    margin: 0;
+
+    margin-top: 24px;
+
+    font-size: 24px;
+}
+
+h3 {
+    display: block;
+
+    padding: 0;
+    margin: 0;
+
+    margin-top: 18px;
+
+    font-size: 18px;
+}
+
+p {
+    display: block;
+
+    padding: 0;
+    margin: 0;
+
+    line-height: 1.5;
+
+    font-size: 18px;
+}
+
+a {
+    display: block;
+
+    padding: 0;
+    margin: 0;
+
+    line-height: 1.5;
+
+    font-size: 18px;
+
+    transition: opacity 150ms ease, text-shadow 150ms ease;
+
+    color: #000000;
+
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #336287;
+    text-decoration: underline;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+
+    position: relative;
+
+    /* box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25); */
+}
+
+.header .headerBackground {
+    width: 100%;
+    height: auto;
+    opacity: 75%;
+}
+
+.header .headerLogo {
+    position: relative;
+    left: 50%;
+
+    width: auto;
+    height: 256px;
+    max-height: 100%;
+
+    margin-top: 10vh;
+    
+    transform: translateX(-50%);
+    filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.25));
+}
+
+.main {
+    display: flex;
+    width: 100%;
+
+    padding: 10vh 20vw;
+    box-sizing: border-box;
+}
+
+.main .left {
+    flex-basis: 40%;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.main .left .facts {
+    /* background-color: #cbd9e4;
+
+    border-radius: 8px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5)); */
+
+    /* padding: 48px 36px; */
+    /* box-sizing: border-box; */
+}
+
+.main .right {
+    flex-basis: 60%;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.main .right .split {
+    width: calc(100% + 24px);
+
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-bottom: 128px;
+}
+
+.main .right .split video,
+.main .right .split img {
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+
+    width: 100%;
+    height: auto;
+}
+
+.main .right .split a {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    width: calc(50% - 24px);
+    margin-bottom: 24px;
+    margin-right: 24px;
+}
+
+.main .right .split h3 {
+}
+
+@font-face {
+    font-family: MyriadLight;
+    src: url(MyriadPro-Light-SemiExtended.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: MyriadBold;
+    src: url(MyriadPro-Bold-SemiExtended.ttf) format('truetype');
+}
