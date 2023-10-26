@@ -117,6 +117,9 @@ a:active {
     flex-basis: 40%;
     flex-grow: 1;
     flex-shrink: 0;
+
+    padding-right: 96px;
+    box-sizing: border-box;
 }
 
 .main .left .facts {
